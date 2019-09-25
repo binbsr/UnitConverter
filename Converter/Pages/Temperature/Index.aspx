@@ -8,32 +8,45 @@
     <link href="../../Styles/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container m-4">
-        <form id="form1" runat="server">
-            <div class="form-group">
-                <asp:TextBox CssClass="form-control" ID="txtLeftBox" runat="server"></asp:TextBox>
+    <div class="row">
+        <div class="col-6">
+            <div class="container mt-4">
+                <form id="form1" runat="server">
+                    <div class="form-group">
+                        <asp:TextBox CssClass="form-control" ID="txtLeftBox" runat="server"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server">
+                            <asp:ListItem>Celcius</asp:ListItem>
+                            <asp:ListItem>Fahrenheit</asp:ListItem>
+                            <asp:ListItem>Kelvin</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="form-group">
+                        <asp:Button CssClass="btn btn-success btn-block" ID="Button1" runat="server" Text="Convert" OnClick="Button1_Click" />
+                    </div>
+                    <div class="form-group">
+                        <asp:TextBox CssClass="form-control" ID="txtRightBox" runat="server"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <asp:DropDownList CssClass="form-control" ID="DropDownList2" runat="server">
+                            <asp:ListItem>Celcius</asp:ListItem>
+                            <asp:ListItem>Fahrenheit</asp:ListItem>
+                            <asp:ListItem>Kelvin</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server">
-                    <asp:ListItem>Celcius</asp:ListItem>
-                    <asp:ListItem>Fahrenheit</asp:ListItem>
-                    <asp:ListItem>Kelvin</asp:ListItem>
-                </asp:DropDownList>
-            </div>
-            <div class="form-group">
-                <asp:Button CssClass="btn btn-success" ID="Button1" runat="server" Text="Convert" OnClick="Button1_Click" />
-            </div>
-            <div class="form-group">
-                <asp:TextBox CssClass="form-control" ID="txtRightBox" runat="server"></asp:TextBox>
-            </div>
-            <div class="form-group">
-                <asp:DropDownList CssClass="form-control" ID="DropDownList2" runat="server">
-                    <asp:ListItem>Celcius</asp:ListItem>
-                    <asp:ListItem>Fahrenheit</asp:ListItem>
-                    <asp:ListItem>Kelvin</asp:ListItem>
-                </asp:DropDownList>
-            </div>
-        </form>
+        </div>
+        <div class="col-6">
+        </div>
     </div>
+    <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
+
 </body>
 </html>

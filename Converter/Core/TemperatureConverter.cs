@@ -34,11 +34,11 @@ namespace Converter.Core
             return outputValue;
         }
 
-        public static double CelciusToFahrenheit(double c) => 9 / (double)5 * c + 32;
-        public static double CelciusToKelvin(double c) => c + 273.15;
-        public static double FahrenheitToCelcius(double f) => 5 / (double)9 * (f - 32);
-        public static double FahrenheitToKelvin(double f) => (f - 32) * 0.56 + 273.15;
-        public static double KelvinToCelcius(double k) => k - 273.15;
-        public static double KelvinToFahrenheit(double k) => (k - 273.15) * 1.8 + 32;
+        private static double CelciusToFahrenheit(double c) => 9 / (double)5 * c + 32;
+        private static double CelciusToKelvin(double c) => c + 273.15;
+        private static double FahrenheitToCelcius(double f) => 5 / (double)9 * (f - 32);
+        private static double FahrenheitToKelvin(double f) => (f - 32) * 0.56 + 273.15;
+        private static double KelvinToCelcius(double k) => k - 273.15;
+        private static double KelvinToFahrenheit(double k) => (k - 273.15) * 1.8 + 32;
     }
 }

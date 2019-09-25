@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Converter.Core;
+using Converter.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,8 +20,13 @@ namespace Converter.Pages.Temperature
         {            
             var inputLeft = txtLeftBox.Text;
             var inUnit = DropDownList1.SelectedValue;
-
             var outUnit = DropDownList2.SelectedValue;
+
+            var outValue = TemperatureConverter.ConvertTemperature(double.Parse(inputLeft), 
+                (TUnit)Enum.Parse(typeof(TUnit), inUnit),
+                (TUnit)Enum.Parse(typeof(TUnit), outUnit));
+
+            txtRightBox.Text = outValue.ToString();
         }
     }
 }
